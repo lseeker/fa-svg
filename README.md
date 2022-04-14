@@ -7,6 +7,12 @@ Main element is &lt;svg&gt;, all attributes are inherited.
 ## Props
 * icon: IconDefinition
 
+## Attributes default values
+These attributes has default value, can override.
+* fill: 'currentColor' (SVG)
+* role: 'img' (ARIA)
+* viewBox: set as icon property. Override this value is not recommended. (SVG)
+
 ## Usage
 ```vue
 <script lang="ts" setup>
