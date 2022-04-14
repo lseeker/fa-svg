@@ -6,15 +6,12 @@ interface Props {
     icon: IconDefinition
 }
 
-function renderPath(d: string): VNode {
-    return h('path', { d });
-}
-
 const render: FunctionalComponent<Props> = (props, context) => {
     // const [width, height, /* ligatures */, /* unicode */, svgPathData] = props.icon.icon;
     const icon = props.icon.icon;
     const svgPathData = icon[4];
-
+    const renderPath = (d: string) => h('path', { d });
+    
     return h(
         'svg',
         Object.assign({
