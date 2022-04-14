@@ -6,6 +6,7 @@
   "module": "dist/fa-svg.js",
   "types": "dist/fa-svg.d.ts",
   "scripts": {
+    "prepack": "npm run build",
     "build": "tsc && terser dist/fa-svg.js -o dist/fa-svg.js -c -m reserved=[h] --module"
   },
   "repository": {
