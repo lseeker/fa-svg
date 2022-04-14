@@ -1,0 +1,36 @@
+{
+  "name": "fa-svg-vue",
+  "version": "1.0.0",
+  "description": "Fontawesome to SVG for Vue 3",
+  "type": "module",
+  "module": "dist/fa-svg.js",
+  "types": "dist/fa-svg.d.ts",
+  "scripts": {
+    "build": "tsc && terser dist/fa-svg.js -o dist/fa-svg.js -c -m reserved=[h] --module"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lseeker/fa-svg.git"
+  },
+  "keywords": [
+    "vue",
+    "fontawesome",
+    "svg",
+    "icon"
+  ],
+  "author": "Yunyoung LEE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lseeker/fa-svg/issues"
+  },
+  "homepage": "https://github.com/lseeker/fa-svg#readme",
+  "peerDependencies": {
+    "vue": "^3.2"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.17.0",
+    "@fortawesome/fontawesome-common-types": "^6.1",
+    "terser": "^5.12.1",
+    "typescript": "^4.6.3"
+  }
+}
