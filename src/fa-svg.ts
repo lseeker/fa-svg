@@ -26,5 +26,6 @@ const render: FunctionalComponent<Props> = (props, context) => {
         Array.isArray(svgPathData) ? svgPathData.map(renderPath) : renderPath(svgPathData)
     );
 }
+render.props = ['icon'];
 
 export default render;
