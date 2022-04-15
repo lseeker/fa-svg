@@ -1,12 +1,12 @@
-import type { FunctionalComponent, VNode, VNodeChild } from "vue"
 import type { IconDefinition } from "@fortawesome/fontawesome-common-types"
+import type { FunctionalComponent } from "vue"
 import { h } from "vue"
 
-interface Props {
+interface FaSvgProps {
     icon: IconDefinition
 }
 
-const render: FunctionalComponent<Props> = (props, context) => {
+const faSvg: FunctionalComponent<FaSvgProps> = (props, context) => {
     // const [width, height, /* ligatures */, /* unicode */, svgPathData] = props.icon.icon;
     const icon = props.icon.icon;
     const svgPathData = icon[4];
@@ -21,8 +21,8 @@ const render: FunctionalComponent<Props> = (props, context) => {
             viewBox: `0 0 ${icon[0]} ${icon[1]}`,
         }, context.attrs),
         Array.isArray(svgPathData) ? svgPathData.map(renderPath) : renderPath(svgPathData)
-    );
+    )
 }
-render.props = ['icon'];
+faSvg.props = ['icon']
 
-export default render;
+export default faSvg;
