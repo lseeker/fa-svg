@@ -7,7 +7,7 @@
   "types": "dist/fa-svg.d.ts",
   "scripts": {
     "prepack": "npm run build",
-    "build": "tsc && terser dist/fa-svg.js -o dist/fa-svg.js -c -m reserved=[h] --module"
+    "build": "tsc && terser dist/fa-svg.js -o dist/fa-svg.js -c -m reserved=[d,h] --module --ecma=2016"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,10 @@
   "devDependencies": {
     "@babel/types": "^7.17.0",
     "@fortawesome/fontawesome-common-types": "^6.1",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "terser": "^5.12.1",
     "typescript": "^4.6.3"
   }
