@@ -45,5 +45,5 @@ app.component("faSvg", faSvg);
 * [@fortawesome/free-brands-svg-icons](https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons): Brands icons
 
 ## Related
-* [Fontawesome official homepage](https://fontawesome.com/): You can search free icons from [here](https://fontawesome.com/search?m=free).
-* [@fortawesome/vue-fontawesome](https://www.npmjs.com/package/@fortawesome/vue-fontawesome): Offcial fontawesome component for vue.
+* [Fontawesome homepage](https://fontawesome.com/): You can search free icons from [here](https://fontawesome.com/search?m=free).
+* [@fortawesome/vue-fontawesome](https://www.npmjs.com/package/@fortawesome/vue-fontawesome): Official fontawesome component for vue.
