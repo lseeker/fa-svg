@@ -1,6 +1,6 @@
 {
   "name": "fa-svg-vue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fontawesome to SVG for Vue 3",
   "type": "module",
   "module": "dist/fa-svg.js",
