@@ -1,27 +1,31 @@
-# Fontawesome SVG Vue
-Vue component for [Fontawesome](https://fontawesome.com/) icon.
+# Fontawesome SVG for Vue 3
+Vue 3 component for [Fontawesome](https://fontawesome.com/) icon.
 
-This component uses direct imported icons, and render as &lt;svg&gt;.
+This component uses direct imported icons, supports tree-shaking.
+Icon renders as &lt;svg&gt; tag.
 Main element is &lt;svg&gt;, all attributes are inherited.
 
 ## Props
-* icon: IconDefinition
+* icon: IconDefinition, imported from fontawesome icons.
 
-## Attributes default values
-These attributes has default value, can override.
+## Attributes's default
+These attributes has default value, can override by set attribute.
 * fill: 'currentColor' (SVG)
 * role: 'img' (ARIA)
 * viewBox: set as icon property. Override this value is not recommended. (SVG)
 
 ## Usage
+In SFC .vue file,
 ```vue
 <script lang="ts" setup>
 import faSvg from 'fa-svg-vue'
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
+import { faFontAwesome }  from '@fortawesome/free-regular-svg-icons'
 </script>
 
 <template>
   <faSvg :icon="faThumbsUp" width="64"/>
+  <faSvg :icon="faFontAwesome" width="64"/>
 </template>
 ```
 
@@ -35,5 +39,11 @@ const app = createApp(/* your app options */)
 app.component("faSvg", faSvg);
 ```
 
+## Usable icons
+* [@fortawesome/free-solid-svg-icons](https://www.npmjs.com/package/@fortawesome/free-solid-svg-icons): Solid icons
+* [@fortawesome/free-regular-svg-icons](https://www.npmjs.com/package/@fortawesome/free-regular-svg-icons): Regular icons
+* [@fortawesome/free-brands-svg-icons](https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons): Brands icons
+
 ## Related
-[@fortawesome/vue-fontawesome](https://www.npmjs.com/package/@fortawesome/vue-fontawesome): offcial fontawesome component for vue, uses library and icon name.
+* [https://fontawesome.com/]: Official fontawesome homepage. You can search icons on [https://fontawesome.com/search?m=free].
+* [@fortawesome/vue-fontawesome](https://www.npmjs.com/package/@fortawesome/vue-fontawesome): Offcial fontawesome component for vue.
