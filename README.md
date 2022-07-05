@@ -1,4 +1,4 @@
-# Fontawesome SVG for Vue 3
+# Fontawesome icon to inline SVG for Vue.js
 Vue component for [Fontawesome](https://fontawesome.com/) icon.
 
 When use on vue 2(2.7+), should import from 'fa-svg-vue/vue2'
