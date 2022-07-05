@@ -1,5 +1,7 @@
 # Fontawesome SVG for Vue 3
-Vue 3 component for [Fontawesome](https://fontawesome.com/) icon.
+Vue component for [Fontawesome](https://fontawesome.com/) icon.
+
+When use on vue 2(2.7+), should import from 'fa-svg-vue/vue2'
 
 This component uses direct imported icons, supports tree-shaking.
 Icon renders as &lt;svg&gt; tag.

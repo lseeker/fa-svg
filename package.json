@@ -1,13 +1,18 @@
 {
   "name": "fa-svg-vue",
   "version": "1.0.2",
+  "subPackages": [
+    "packages/vue3",
+    "packages/vue2"
+  ],
   "description": "Fontawesome to SVG for Vue 3",
   "type": "module",
-  "module": "dist/fa-svg.js",
-  "types": "dist/fa-svg.d.ts",
+  "module": "vue3.js",
+  "types": "vue3.d.ts",
   "scripts": {
     "prepack": "npm run build",
-    "build": "tsc && terser dist/fa-svg.js -o dist/fa-svg.js -c -m reserved=[d,h] --module --ecma=2016"
+    "build": "subpkg run build",
+    "lint": "subpkg run lint"
   },
   "repository": {
     "type": "git",
@@ -26,16 +31,15 @@
   },
   "homepage": "https://github.com/lseeker/fa-svg#readme",
   "peerDependencies": {
-    "vue": "^3.2"
+    "vue": "^2.7 || ^3.2"
   },
   "devDependencies": {
-    "@babel/types": "^7.17.0",
-    "@fortawesome/fontawesome-common-types": "^6.1.1",
-    "@typescript-eslint/eslint-plugin": "^5.20.0",
-    "@typescript-eslint/parser": "^5.20.0",
-    "eslint": "^8.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "terser": "^5.12.1",
-    "typescript": "^4.6.3"
+    "subpackage": "^1.1.0",
+    "terser": "^5.14.1",
+    "typescript": "^4.7.4"
   }
 }
