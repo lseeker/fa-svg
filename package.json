@@ -5,7 +5,7 @@
     "packages/vue3",
     "packages/vue2"
   ],
-  "description": "Fontawesome to SVG for Vue 3",
+  "description": "Fontawesome icon to inline SVG for Vue",
   "type": "module",
   "module": "vue3.js",
   "types": "vue3.d.ts",

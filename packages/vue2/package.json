@@ -1,7 +1,7 @@
 {
   "name": "fa-svg-vue2",
   "version": "1.1.0",
-  "description": "Fontawesome to SVG for Vue 2",
+  "description": "Fontawesome icon to inline SVG for Vue 2",
   "type": "module",
   "module": "../../vue2.js",
   "types": "../../vue2.d.ts",
